@@ -13,37 +13,37 @@ Each implementation strictly adheres to the six pillars of the AWS Well-Architec
 
 ## Folders in the repo:
 
-**Project-1:** [Real-Time Change Data Capture (CDC) for Global Supply Chain](https://www.google.com/search?q=./Project-1)
+**Project-1:** [Real-Time Change Data Capture (CDC) for Global Supply Chain](./Project-1)
 
 * **Industry:** Supply Chain & Logistics
 * **Focus:** Streaming Analytics, High-Performing Architectures
 * **Description:** An event-driven architecture using AWS DMS to capture ongoing operational database changes and stream them into Amazon MSK. AWS Glue streaming ETL deduplicates and processes the records in real-time before storing them in S3 for Athena queries, ensuring a trusted single source of truth for global inventory tracking.
 
-**Project-2:** [Multi-Region IoT Sensor Ingestion for Manufacturing](https://www.google.com/search?q=./Project-2)
+**Project-2:** [Multi-Region IoT Sensor Ingestion for Manufacturing](./Project-2)
 
 * **Industry:** IoT Manufacturing
 * **Focus:** Resilient Architectures, Operational Excellence
 * **Description:** A highly available, active-active event ingestion pipeline processing millions of sensor events daily. The architecture utilizes Amazon API Gateway, Kinesis Data Streams, and Lambda for micro-batching across two regions. Data is persisted in DynamoDB Global Tables to ensure cross-region read/write consistency and fault tolerance.
 
-**Project-3:** [Schema-Driven Batch Data Lake for Business Intelligence](https://www.google.com/search?q=./Project-3)
+**Project-3:** [Schema-Driven Batch Data Lake for Business Intelligence](Project-3)
 
 * **Industry:** Business Intelligence / Data Engineering
 * **Focus:** Cost-Optimized Architectures, Reliability
 * **Description:** An automated, metadata-driven ingestion framework orchestrated by Amazon MWAA (Apache Airflow). Dynamic DAGs trigger PySpark jobs on AWS Glue that fetch schema rules from DynamoDB, validating and sanitizing raw data before writing optimized Parquet files to a curated S3 bucket for BI reporting in Amazon QuickSight.
 
-**Project-4:** [Automated Fleet Telemetrics & Executive Remediation Workflow](https://www.google.com/search?q=./Project-4)
+**Project-4:** [Automated Fleet Telemetrics & Executive Remediation Workflow](./Project-4)
 
 * **Industry:** Logistics
 * **Focus:** Secure Architectures, Operational Excellence
 * **Description:** A serverless Step Functions state machine that analyzes telemetrics anomalies and cost drivers. The workflow integrates Lambda for root-cause analysis via Athena, SNS for human-in-the-loop executive approvals, and automated remediation actions, outputting operational health metrics to QuickSight dashboards.
 
-**Project-5:** [Predictive Maintenance ML Pipeline & Feature Store](https://www.google.com/search?q=./Project-5)
+**Project-5:** [Predictive Maintenance ML Pipeline & Feature Store](./Project-5)
 
 * **Industry:** Data Analytics & Science
 * **Focus:** Performance Efficiency, Reliability
 * **Description:** An end-to-end data pipeline feeding machine learning models using Amazon SageMaker Feature Store. Raw data is ingested via Amazon Kinesis Data Firehose, transformed by AWS Glue, and securely stored in S3, demonstrating the decoupling of data preparation from model training and deployment.
 
-**Project-6:** [Legacy Infrastructure Migration & Cost Analytics Engine](https://www.google.com/search?q=./Project-6)
+**Project-6:** [Legacy Infrastructure Migration & Cost Analytics Engine](./Project-6)
 
 * **Industry:** Cross-Industry Data Engineering
 * **Focus:** Cost Optimization, Security
