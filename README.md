@@ -86,4 +86,89 @@ Each project in this repository is designed around:
 * **Industry**: Cross-Industry Data Engineering
 * **AWS Services**: AWS Cost & Usage Reports (CUR), S3, Athena
 * **External Free Tools**: Metabase (Open Source / Local Docker)
-* **Description**:A financial operations (FinOps) architecture highlighting the Cost Optimization pillar. AWS Cost and Usage Reports are configured to deliver directly to an S3 bucket. Using Athena, the raw billing data is queried and connected to a locally hosted instance of Metabase to visualize cost savings and track the budget boundaries of migrating legacy pipelines to the cloud. 
+* **Description**:A financial operations (FinOps) architecture highlighting the Cost Optimization pillar. AWS Cost and Usage Reports are configured to deliver directly to an S3 bucket. Using Athena, the raw billing data is queried and connected to a locally hosted instance of Metabase to visualize cost savings and track the budget boundaries of migrating legacy pipelines to the cloud.
+
+
+
+
+
+
+## Project structure
+
+Each completed project will include:
+
+```text
+project-name/
+├── README.md                  # Business case, architecture, and outcomes
+├── architecture/
+│   └── architecture-diagram.png
+├── infrastructure/
+│   ├── cloudformation/        # Or Terraform / CDK, depending on project
+│   └── parameters/
+├── data/
+│   ├── sample-data/
+│   └── data-dictionary.md
+├── pipelines/
+│   ├── etl/
+│   ├── streaming/
+│   └── orchestration/
+├── analytics/
+│   ├── sql/
+│   └── dashboards/
+├── machine-learning/          # Where applicable
+│   ├── feature-engineering/
+│   └── notebooks/
+├── security/
+│   └── iam-policies/
+├── tests/
+└── docs/
+    ├── cost-estimates.md
+    ├── security-controls.md
+    └── business-use-case.md
+```
+
+---
+
+## How each project is evaluated
+
+A project is considered complete only when it answers:
+
+1. **What business problem does it solve?**
+2. **Who experiences that problem?**
+3. **What decision or action does the solution improve?**
+4. **What metric demonstrates success?**
+5. **What data is required, and how is quality maintained?**
+6. **What AWS architecture supports the workload?**
+7. **How are security, reliability, performance, cost, and sustainability addressed?**
+8. **What would need to change for production-scale deployment?**
+
+---
+
+## Skills demonstrated
+
+| Area | Skills |
+|---|---|
+| AWS architecture | Solution design, Well-Architected review, resilience, multi-region design, serverless architecture |
+| Data engineering | CDC, batch ETL, streaming ingestion, data modeling, data quality, orchestration, Parquet and data-lake design |
+| Analytics and BI | KPI definition, governed reporting, Athena SQL, QuickSight dashboards, self-service analytics |
+| Machine learning | Feature stores, training data pipelines, model readiness, MLOps foundations |
+| Security and governance | IAM, least privilege, encryption, data cataloging, tagging, auditability |
+| FinOps | Cost visibility, budgets, tagging strategy, cost anomaly analysis, migration savings measurement |
+| Engineering practices | Infrastructure as code, documentation, testing, monitoring, reproducibility |
+
+---
+
+## Roadmap
+
+- [ ] Project 1: Real-time inventory visibility for global supply chains  
+- [ ] Project 2: Resilient multi-region IoT ingestion for manufacturing  
+- [ ] Project 3: Governed data lake for business intelligence  
+- [ ] Project 4: Fleet health monitoring and remediation workflow  
+- [ ] Project 5: Predictive maintenance feature platform  
+- [ ] Project 6: Cloud cost analytics and migration governance  
+
+---
+
+## Connect
+
+This repository is intended to demonstrate not only AWS technical proficiency, but also the ability to translate business problems into secure, scalable, cost-conscious cloud and data solutions.
