@@ -3,7 +3,7 @@
 🚧 WORK IN PROGRESS 🚧
 Hello Visitors! This repository is currently under active development. I am building out these projects to demonstrate my hands-on proficiency after passing the AWS SAA-C03 exam. I will be updating the folders below as I complete each architecture. Thank you for your patience!
 
-This repository documents hands-on cloud engineering projects demonstrating proficiency as an AWS Certified Solutions Architect - Associate. The architectures focus heavily on Data Engineering, high-volume data pipelines, and adherence to the AWS Well-Architected Framework.
+This repository documents hands-on cloud engineering projects demonstrating proficiency as an AWS Certified Solutions Architect - Associate. The architectures focus heavily on Data Engineering, high-volume data pipelines, and adherence to the AWS Well-Architected Framework. Each project will include architecture diagrams, infrastructure-as-code, data models, cost considerations, security controls, and a written business case.
 
 Infrastructure & Cost Note: To maintain cost efficiency, these projects are built utilizing the AWS Free Tier, my $200 trial credits, and integrated with free, open-source third-party tools (like Streamlit, Google Colab, and local Apache Airflow deployments) to simulate enterprise-grade environments without the enterprise price tag.
 
@@ -15,7 +15,25 @@ The solutions are designed around the official domains of the SAA-C03 exam:
 * **Design High-Performing Architectures**
 * **Design Cost-Optimized Architectures**
 
-Each implementation strictly adheres to the six pillars of the AWS Well-Architected Framework: Operational Excellence, Security, Reliability, Performance efficiency, Cost optimization, and Sustainability. The projects tackle complex, domain-specific challenges across supply chain, IoT manufacturing, business intelligence, logistics, and data science.
+Each project in this repository is designed around:
+
+- **The industry problem being solved**
+  - The projects tackle complex, domain-specific challenges across supply chain, IoT manufacturing, business intelligence, logistics, and data scienc
+- **The business decision the solution supports**
+- **The users and workflows affected**
+- **The measurable outcome or KPI**
+- **The AWS architecture and Well-Architected trade-offs**
+  -  Operational Excellence, Security, Reliability, Performance efficiency, Cost optimization, and Sustainability.
+- **Security, governance, reliability, performance, cost, and sustainability**
+  
+## What this portfolio demonstrates
+
+- **Cloud architecture:** Secure, resilient, high-performing, and cost-aware AWS designs.
+- **Data engineering:** Batch, streaming, CDC, data-lake, governance, and data-quality patterns.
+- **Analytics and BI:** Turning operational data into decision-ready dashboards and insights.
+- **Machine learning enablement:** Feature engineering, model-ready data pipelines, and MLOps foundations.
+- **Business alignment:** Every project begins with a problem statement, target user, decision, and success metric.
+- **Cost-conscious engineering:** Practical designs using AWS Free Tier, trial credits, and open-source tools where appropriate.
 
 ## Folders in the repo:
 
