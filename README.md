@@ -8,8 +8,6 @@ This repository documents hands-on cloud engineering projects demonstrating prof
 Infrastructure & Cost Note: To maintain cost efficiency, these projects are built utilizing the AWS Free Tier, my $200 trial credits, and integrated with free, open-source third-party tools (like Streamlit, Google Colab, and local Apache Airflow deployments) to simulate enterprise-grade environments without the enterprise price tag.
 
 
-
-
 The solutions are designed around the official domains of the SAA-C03 exam:
 
 * **Design Secure Architectures**
