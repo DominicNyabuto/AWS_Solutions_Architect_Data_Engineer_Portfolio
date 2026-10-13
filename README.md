@@ -50,30 +50,40 @@ Each project in this repository is designed around:
 * **Status**: ⏳ Planned
 * **Industry**: IoT Manufacturing
 * **AWS Services**: API Gateway, Lambda, DynamoDB Global Tables
-* **Focus:** Python Mock Sensor Script
 * **External Free Tools**: Python Mock Sensor Script
 * **Description**: Designed for resilience and operational excellence. A fleet of simulated local factory sensors (Python script) sends telemetry data to an AWS API Gateway. Lambda micro-batches the payloads and writes them to DynamoDB Global Tables, demonstrating cross-region read/write consistency and active-active high availability using strictly free-tier eligible services.
   
 **Project-3:** [Schema-Driven Batch Data Lake for Business Intelligence](Project-3)
 
-* **Industry:** Business Intelligence / Data Engineering
-* **Focus:** Cost-Optimized Architectures, Reliability
-* **Description:** An automated, metadata-driven ingestion framework orchestrated by Amazon MWAA (Apache Airflow). Dynamic DAGs trigger PySpark jobs on AWS Glue that fetch schema rules from DynamoDB, validating and sanitizing raw data before writing optimized Parquet files to a curated S3 bucket for BI reporting in Amazon QuickSight.
+* **Status**: ⏳ Planned
+* **Industry**: Business Intelligence / Data Engineering
+* **AWS Services**: EC2 (t2.micro), S3, AWS Glue (Trial/Minimal DPU), Amazon Athena
+* **External Free Tools**: Apache Airflow (Self-hosted on EC2), Streamlit Community Cloud
+* **Description**:A cost-optimized, metadata-driven ingestion framework. Rather than using expensive managed orchestration, Apache Airflow is hosted on a free-tier EC2 instance to trigger ETL jobs. Raw data lands in S3, is transformed into Parquet using lightweight PySpark/Glue, and is queried via serverless Amazon Athena. A free Streamlit web app is connected to Athena to serve BI dashboards.
+
 
 **Project-4:** [Automated Fleet Telemetrics & Executive Remediation Workflow](./Project-4)
 
-* **Industry:** Logistics
-* **Focus:** Secure Architectures, Operational Excellence
-* **Description:** A serverless Step Functions state machine that analyzes telemetrics anomalies and cost drivers. The workflow integrates Lambda for root-cause analysis via Athena, SNS for human-in-the-loop executive approvals, and automated remediation actions, outputting operational health metrics to QuickSight dashboards.
+* **Status**: ⏳ Planned
+* **Industry**: Logistics
+* **AWS Services**: Step Functions, Lambda, SNS, S3
+* **External Free Tools**: GitHub Actions (for CI/CD)
+* **Description**:A serverless, human-in-the-loop remediation workflow highlighting secure and automated operations. An AWS Step Functions state machine triggers when anomalous fleet fuel or route data lands in S3. It uses Lambda to evaluate the anomaly and SNS to email stakeholders for an Approve/Reject action before writing the final operational health status back to S3.
+
 
 **Project-5:** [Predictive Maintenance ML Pipeline & Feature Store](./Project-5)
 
-* **Industry:** Data Analytics & Science
-* **Focus:** Performance Efficiency, Reliability
-* **Description:** An end-to-end data pipeline feeding machine learning models using Amazon SageMaker Feature Store. Raw data is ingested via Amazon Kinesis Data Firehose, transformed by AWS Glue, and securely stored in S3, demonstrating the decoupling of data preparation from model training and deployment.
+* **Status**: ⏳ Planned
+* **Industry**: Data Analytics & Science
+* **AWS Services**: API Gateway, Lambda, S3
+* **External Free Tools**: Google Colab (Free GPU/TPU), Scikit-Learn
+* **Description**:Showcases the decoupling of data preparation from ML training. Historical machinery data is stored in S3. Model training is offloaded to Google Colab to utilize free compute power. The trained model artifact (.pkl) is then uploaded back to S3, where a Lambda function (exposed via API Gateway) loads it to serve real-time serverless predictions.
+
 
 **Project-6:** [Legacy Infrastructure Migration & Cost Analytics Engine](./Project-6)
 
-* **Industry:** Cross-Industry Data Engineering
-* **Focus:** Cost Optimization, Security
-* **Description:** A comprehensive migration strategy coordinating the retirement of legacy pipelines. The system utilizes AWS Cost Explorer APIs and AWS Budgets to track expenditure, paired with a custom dashboard to analyze cost savings achieved during the transition while maintaining strict IAM security boundaries and data governance.
+* **Status**: ⏳ Planned
+* **Industry**: Cross-Industry Data Engineering
+* **AWS Services**: AWS Cost & Usage Reports (CUR), S3, Athena
+* **External Free Tools**: Metabase (Open Source / Local Docker)
+* **Description**:A financial operations (FinOps) architecture highlighting the Cost Optimization pillar. AWS Cost and Usage Reports are configured to deliver directly to an S3 bucket. Using Athena, the raw billing data is queried and connected to a locally hosted instance of Metabase to visualize cost savings and track the budget boundaries of migrating legacy pipelines to the cloud. 
