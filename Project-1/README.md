@@ -31,4 +31,7 @@ Capture operational database changes as they occur, stream them through an event
 **Planned AWS services:**  
 AWS DMS, Amazon MSK, AWS Glue Streaming ETL, Amazon S3, AWS Glue Data Catalog, Amazon Athena, Amazon QuickSight, IAM, CloudWatch.
 
+**Well-Architected focus:**  
+Performance efficiency, operational excellence, reliability, and data governance.
+
 **Status:** 🚧 In progress
