@@ -1,6 +1,14 @@
 # AWS Solutions Architect & Data Engineer Portfolio
 
-This repository documents advanced cloud engineering projects that demonstrate proficiency as an AWS Certified Solutions Architect - Associate (SAA-C03). The architectures are inspired by high-volume, production-grade data pipelines, referencing the architectural patterns highlighted in [Linked Images](https://github.com/dominicnyabuto/AWS-SAA/blob/main/1790521312961.jpeg).
+🚧 WORK IN PROGRESS 🚧
+Hello Visitors! This repository is currently under active development. I am building out these projects to demonstrate my hands-on proficiency after passing the AWS SAA-C03 exam. I will be updating the folders below as I complete each architecture. Thank you for your patience!
+
+This repository documents hands-on cloud engineering projects demonstrating proficiency as an AWS Certified Solutions Architect - Associate. The architectures focus heavily on Data Engineering, high-volume data pipelines, and adherence to the AWS Well-Architected Framework.
+
+Infrastructure & Cost Note: To maintain cost efficiency, these projects are built utilizing the AWS Free Tier, my $200 trial credits, and integrated with free, open-source third-party tools (like Streamlit, Google Colab, and local Apache Airflow deployments) to simulate enterprise-grade environments without the enterprise price tag.
+
+
+
 
 The solutions are designed around the official domains of the SAA-C03 exam:
 
