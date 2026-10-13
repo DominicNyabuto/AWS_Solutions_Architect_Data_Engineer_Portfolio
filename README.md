@@ -7,6 +7,7 @@ This repository documents hands-on cloud engineering projects demonstrating prof
 
 Infrastructure & Cost Note: To maintain cost efficiency, these projects are built utilizing the AWS Free Tier, my $200 trial credits, and integrated with free, open-source third-party tools (like Streamlit, Google Colab, and local Apache Airflow deployments) to simulate enterprise-grade environments without the enterprise price tag.
 
+
 The solutions are designed around the official domains of the SAA-C03 exam:
 
 * **Design Secure Architectures**
@@ -38,16 +39,21 @@ Each project in this repository is designed around:
 
 **Project-1:** [Real-Time Change Data Capture (CDC) for Global Supply Chain](./Project-1)
 
-* **Industry:** Supply Chain & Logistics
-* **Focus:** Streaming Analytics, High-Performing Architectures
-* **Description:** An event-driven architecture using AWS DMS to capture ongoing operational database changes and stream them into Amazon MSK. AWS Glue streaming ETL deduplicates and processes the records in real-time before storing them in S3 for Athena queries, ensuring a trusted single source of truth for global inventory tracking.
+* **Status**: ⏳ In Progress
+* **Industry**: Supply Chain & Logistics
+* **AWS Services**: DynamoDB Streams, Lambda, S3, EventBridge
+* **External Free Tools**: Python (Boto3)
+* **Description:** An event-driven, friendly CDC architecture. Instead of heavy streaming services, this project uses DynamoDB Streams to capture operational database changes. AWS Lambda processes and deduplicates the stream in real-time, pushing structured JSON data into S3 to create a highly available, decoupled single source of truth for inventory state.
 
 **Project-2:** [Multi-Region IoT Sensor Ingestion for Manufacturing](./Project-2)
 
-* **Industry:** IoT Manufacturing
-* **Focus:** Resilient Architectures, Operational Excellence
-* **Description:** A highly available, active-active event ingestion pipeline processing millions of sensor events daily. The architecture utilizes Amazon API Gateway, Kinesis Data Streams, and Lambda for micro-batching across two regions. Data is persisted in DynamoDB Global Tables to ensure cross-region read/write consistency and fault tolerance.
-
+* **Status**: ⏳ Planned
+* **Industry**: IoT Manufacturing
+* **AWS Services**: API Gateway, Lambda, DynamoDB Global Tables
+* **Focus:** Python Mock Sensor Script
+* **External Free Tools**: Python Mock Sensor Script
+* **Description**: Designed for resilience and operational excellence. A fleet of simulated local factory sensors (Python script) sends telemetry data to an AWS API Gateway. Lambda micro-batches the payloads and writes them to DynamoDB Global Tables, demonstrating cross-region read/write consistency and active-active high availability using strictly free-tier eligible services.
+  
 **Project-3:** [Schema-Driven Batch Data Lake for Business Intelligence](Project-3)
 
 * **Industry:** Business Intelligence / Data Engineering
